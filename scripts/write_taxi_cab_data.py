@@ -4,8 +4,11 @@ from pathlib import Path
 from urllib.parse import urlparse
 
 import requests
+import urllib3
 from lxml import html
 from minio import Minio
+
+urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 chunksize = 200 * 1024 ** 2  # 200MB
 mc = Minio('minio.opt-pilot.svc.hkcc.ks:9000', 'opt-minio-dev', 'opt-minio-dev', secure=False)
