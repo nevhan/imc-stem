@@ -1,0 +1,11 @@
+dask
+distributed
+s3fs
+minio
+ipykernel
+bokeh==0.13.0
+numpy==1.14.5
+requests
+lxml
+matplotlib
+seaborn
