@@ -1,0 +1,7 @@
+websocket-client
+seaborn
+pandas
+requests
+ipykernel
+bokeh
+scikit-learn
